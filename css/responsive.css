@@ -1,0 +1,10 @@
+/* Slider */
+@media only screen and (max-width: 575px){
+    .py-5{
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    p.w-50{
+        width: 100% !important;
+    }
+}

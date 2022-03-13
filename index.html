@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header class="bg-white">
+    <header class="bg-white sticky-top ">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html">Weeding Center</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,32 +59,32 @@
         <div class="carousel-inner">
           <div class="carousel-item active mb-4">
             <img src="images/slide1.jpg" class="d-block w-100" alt="slide1">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              <a href="https://www.brides.com/" class="btn btn-primary">Book  Now</a>
+            <div class="carousel-caption d-md-block">
+              <h2>Our Diversity Pledge</h5>
+              <p class="w-50 mx-auto">It is our absolute commitment that every couple sees themselves represented on Brides.</p>
+              <a href="https://www.brides.com/" target="_blank" class="btn btn-primary">Book  Now</a>
             </div>
           </div>
           <div class="carousel-item mb-4">
-            <img src="images/slide2.jpg" class="d-block w-100" alt="slide2">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p> <a href="https://www.brides.com/" class="btn btn-primary">Book  Now</a>
+            <img src="images/slide6.jpg" class="d-block w-100" alt="slide2">
+            <div class="carousel-caption d-md-block">
+              <h2>Our Favorite Wedding Trend</h5>
+              <p class="w-50 mx-auto">When you picture romantic “I dos,” it’s hard to get visions of festive flowers and bold blooms out of your head. And eve</p> <a href="https://www.brides.com/" target="_blank" class="btn btn-primary">Book  Now</a>
             </div>
           </div>
           <div class="carousel-item mb-4">
             <img src="images/slide3.jpg" class="d-block w-100" alt="slide3">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-               <a href="https://www.brides.com/" class="btn btn-primary">Book  Now</a>
+            <div class="carousel-caption d-md-block">
+              <h2> Wedding Dresses for Every Season</h5>
+              <p class="w-50 mx-auto">Now before you think all floral gowns are covered in embellishments, the dreamy aesthetic comes in a variety of styles. </p>
+               <a href="https://www.brides.com/" target="_blank" class="btn btn-primary">Book  Now</a>
             </div>
           </div>
           <div class="carousel-item mb-4">
-            <img src="images/slide4.jpg" class="d-block w-100" alt="slide4">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p> <a href="https://www.brides.com/" class="btn btn-primary">Book  Now</a>
+            <img src="images/slide5.jpg" class="d-block w-100" alt="slide4">
+            <div class="carousel-caption d-md-block">
+              <h2>Beautiful Wedding at a Private Estate</h5>
+              <p class="w-50 mx-auto">Changing the wedding three times due to COVID was a challenge,” Kelsey says. “Since the original date was in March 2020</p> <a href="https://www.brides.com/" target="_blank" class="btn btn-primary">Book  Now</a>
             </div>
           </div>
         </div>
@@ -98,38 +98,43 @@
         </button>
       </div> <!-- End Slider-->
       
-      <section class="py-5"> 
+        <!-- Toast -->
+        
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">Welcome To Wedding Party</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, Here! You are most welcome to wedding center
+            </div>
+          </div>
+        </div>
+
+      <section class="py-5 bg-light"> 
           <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12 ">
                     <img class="img-fluid rounded" src="images/weeding banner.jpg" alt="weeding banner">
                 </div>
                 <div class="col-md-6 col-sm-12 ">
-                    <h2>Every moment is Precious</h2>
+                    <h2 class="mt-3">Every moment is Precious</h2>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor
                       20% off on next booking
                       do amet sint. Velit officia consequat duis enim velit mollit.
                       Exercitation veniam consequat sunt nostrud amet.</p>
-                      <button class="btn btn-primary">Explore our albumn <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </button>
+                      <button class="btn btn-primary" id="liveToastBtn">Explore our albumn <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </button>
                 </div>
             </div>
           </div>
       </section>
-      <!-- Toast -->
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <img src="..." class="rounded me-2" alt="...">
-          <strong class="me-auto">Welcome to Weeding Party</strong>
-          <small>11 mins ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Hello, world! This is a toast message.
-        </div>
-      </div>
+
         <section class="py-5"> <!--Our Package Section-->
             <div class="container">
-                <h2 class="text-center fw-bold py-4">Our Package</h2>
+                <h2 class="text-center fw-bold pb-4">Our Package</h2>
                 <div class="row">
                     <div class="col-md-3">
                     <div class="card">
@@ -138,64 +143,65 @@
                         <p class="card-text">For most businesses event 
                             like book fair, craft fair.</p>
                             <ul class="list-unstyled">
-                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>An item</li>
-                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A second item</li>
-                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A third item</li>
-                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A fourth item</li>
-                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>And a fifth one</li>
+                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>limited space access</li>
+                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Secuirty facility</li>
+                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>event support</li>
+                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Decoration design</li>
+                                <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Per day bill</li>
                             </ul>
-                        <a href="#" class="btn btn-primary d-flex justify-content-center ">Button</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-center ">Choose Plan</a>
                         </div>
                     </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body">
-                            <h5 class="card-title fw-bolder">$300 <br>Business fair</h5>
+                            <h5 class="card-title fw-bolder">$500 <br>Weeding Basic</h5>
                             <p class="card-text">For most businesses event 
                                 like book fair, craft fair.</p>
                                 <ul class="list-unstyled">
-                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>An item</li>
-                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A second item</li>
-                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A third item</li>
-                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A fourth item</li>
-                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>And a fifth one</li>
+                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Full space access</li>
+                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Food Management</li>
+                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>mangement support</li>
+                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Decoration design</li>
+                                    <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>pay as plan</li>
                                 </ul>
-                            <a href="#" class="btn btn-primary d-flex justify-content-center ">Button</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-center ">Choose Plan</a>
                             </div>
                         </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card">
+                            <div class="card position-relative bg-info">
                                 <div class="card-body">
-                                <h5 class="card-title fw-bolder">$300 <br>Business fair</h5>
+                                <h5 class="card-title fw-bolder ">$800 <br>Weeding Plus</h5>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Hot <span class="visually-hidden">unread messages</span></span>
                                 <p class="card-text">For most businesses event 
                                     like book fair, craft fair.</p>
                                     <ul class="list-unstyled">
-                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>An item</li>
-                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A second item</li>
-                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A third item</li>
-                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A fourth item</li>
-                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>And a fifth one</li>
+                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Full space access</li>
+                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Dedicated team</li>
+                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Buffet food</li>
+                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>premium Decoration</li>
+                                        <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>pay as plan</li>
                                     </ul>
-                                <a href="#" class="btn btn-primary d-flex justify-content-center ">Button</a>
+                                <a href="#" class="btn btn-primary d-flex justify-content-center ">Choose Plan</a>
                                 </div>
                             </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-body">
-                                    <h5 class="card-title fw-bolder">$300 <br>Business fair</h5>
+                                    <h5 class="card-title fw-bolder">$1200 <br>Corporate Event</h5>
                                     <p class="card-text">For most businesses event 
                                         like book fair, craft fair.</p>
                                         <ul class="list-unstyled">
-                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>An item</li>
-                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A second item</li>
-                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A third item</li>
-                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>A fourth item</li>
-                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>And a fifth one</li>
+                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Full space access</li>
+                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Dedicated team</li>
+                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Buffet food</li>
+                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>premium Decoration</li>
+                                            <li class=""><i class="fa fa-check-circle me-2" aria-hidden="true"></i>pay as plan</li>
                                         </ul>
-                                    <a href="#" class="btn btn-primary d-flex justify-content-center ">Button</a>
+                                    <a href="#" class="btn btn-primary d-flex justify-content-center">Choose Plan</a>
                                     </div>
                                 </div>
                                 </div>
@@ -205,13 +211,12 @@
         <!-- Client Section -->
         <section class="py-5"> 
             <div class="container">
-                <h2 class="text-center fw-bold py-4">Happy Client Says</h2>
+                <h2 class="text-center fw-bold pb-4">Happy Clients Says</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card text-center">
+                        <div class="card text-center shadow-sm bg-light rounded">
                             <div class="card-body"> 
-                                <p class="card-text">Slate helps you see how 
-                                    many more days you need to work to reach your financial goal for the month and year.</p>    
+                                <p class="card-text">Broadly helps you get quality reviews and actively promotes your business on Google, TripAdvisor, NextDoor, Facebook, and other popular review platforms.</p>    
                             </div>
                             <img src="images/client1.jpg" class="img-fluid rounded-circle mx-auto d-block w-25" alt="">
                             <h5 class="">Regina Miles</h5>
@@ -219,25 +224,23 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center">
+                        <div class="card text-center shadow-sm bg-light rounded">
                             <div class="card-body"> 
-                                <p class="card-text">Slate helps you see how 
-                                    many more days you need to work to reach your financial goal for the month and year.</p>    
+                                <p class="card-text">Want to get more customer reviews for your business? Use these outreach templates (and DIY customer review builder!) to help your customers.</p>    
                             </div>
-                            <img src="images/client1.jpg" class="img-fluid rounded-circle mx-auto d-block w-25" alt="">
-                            <h5 class="">Regina Miles</h5>
-                            <p>Banker</p>
+                            <img src="images/client2.jpg" class="img-fluid rounded-circle mx-auto d-block w-25" alt="">
+                            <h5 class="">Cret Yater</h5>
+                            <p>Teacher</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center">
+                        <div class="card text-center shadow-sm bg-light rounded">
                             <div class="card-body"> 
-                                <p class="card-text">Slate helps you see how 
-                                    many more days you need to work to reach your financial goal for the month and year.</p>    
+                                <p class="card-text">Customer reviews build something known as social proof, a phenomenon that states people are influenced by those around them. </p>    
                             </div>
-                            <img src="images/client1.jpg" class="img-fluid rounded-circle mx-auto d-block w-25" alt="">
-                            <h5 class="">Regina Miles</h5>
-                            <p>Banker</p>
+                            <img src="images/client4.jpg" class="img-fluid rounded-circle mx-auto d-block w-25" alt="">
+                            <h5 class="">Jone Drake</h5>
+                            <p>Doctor</p>
                         </div>
                     </div>
                 </div>
@@ -247,8 +250,7 @@
         <!-- FAQ Section -->
         <section class="pb-5">
             <div class="container">
-                <h2 class="fw-bold text-center py-4">
-                    Frequently Asked Questions
+                <h2 class="fw-bold text-center pb-4"> Frequently Asked Questions
                 </h2>
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -256,36 +258,36 @@
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Accordion Item #1
+                                    What’s the difference between event design and event planning?
                                 </button>
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  The vision for their wedding became clear once Andrew accompanied Jordana on a work trip to Nashville. “We fell in love with Nashville, and the idea of having a Tennessee barn wedding was born,” the couple says. “We both love country music and wanted to do something different and exciting.”
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Accordion Item #2
+                                  Where to Have Your Destination Wedding
                                 </button>
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  If you dream of saying “I do” with your toes in the sand, Florida’s 825 miles of beaches offer plenty of options to start off your marriage in beachy bliss. Of course, this state is known for its sunshine and sandy shores, but the peninsula really doesn’t get enough credit for being one of the more diverse locales in the nation.
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Accordion Item #3
+                                  How to Choose the Perfect Wedding Venue
                                 </button>
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  While pretty much every aspect of a wedding is optional, from wearing a suit instead of a dress to ditching the flowers to forgoing the wedding cake, there's one thing you can't skip: a venue. After all, you've got to have somewhere for your friends and family to gather and celebrate.
                                 </div>
                               </div>
                             </div>
@@ -299,16 +301,14 @@
         </section>
         <!-- End FAQ Section -->
         <!-- Contact Section -->
-        <section class="py-5">
+        <section class="py-5 bg-light">
             <div class="container">
-                <h2 class="fw-bold text-center py-4">
-                    Contact Us
-                </h2>
+                <h2 class="fw-bold text-center py-4"> Contact Us</h2>
                 <div class="row align-items-center">
                     <div class="col-md-6 col-sm-12">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116653.6265593979!2d91.04172386170835!3d23.98073555236776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375405bd30bb4f23%3A0x1b3b2e1fce26f623!2sBrahmanbaria!5e0!3m2!1sen!2sbd!4v1647149593641!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12 p-3">
                         <form action="" method="post">
                             <div class="mb-3">
                                 <label for="name">Your Name</label>
@@ -354,5 +354,16 @@
       <!-- script -->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+      <script>
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+          toastTrigger.addEventListener('click', function () {
+            var toast = new bootstrap.Toast(toastLiveExample)
+
+            toast.show()
+          })
+        }
+      </script>
 </body>
 </html>
